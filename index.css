@@ -26,12 +26,12 @@ p {
     text-align: justify;
     text-justify: inter-word;
 }
-.topnav {
+#topnav {
    background-color: black;
    overflow: hidden;
    margin-top: 0px;
 }
-.topnav a {
+#topnav a {
     float: left;
     color: #f2f2f2;
     font-weight: bold;
@@ -40,13 +40,18 @@ p {
     text-decoration: none;
     font-size: 18px;
 }
-.topnav a:hover {
+#topnav a:hover {
     color: #FDF401;
 }
-.topnav a.active {
-    background-color: #FDF401;
-    color: black;
-    font-weight: bold;
+#topnav img {
+    height: 35px;
+    position: relative;
+    float: left;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    padding-left: 10px;
 }
 .header img {
     display: flex;
@@ -121,7 +126,7 @@ p {
     outline-width: 3px;
     outline-color: #939393;
 }
-.selected-work-header {
+#selected-work-header {
     background-color: black;
     overflow: hidden;
     text-align: center;
@@ -177,7 +182,7 @@ p {
     padding-right: 10px;
     text-justify: inter-word;
 }
-.contact-header {
+#contact-header {
     background-color: black;
     overflow: hidden;
     text-align: center;
@@ -207,9 +212,13 @@ p {
     padding-bottom: 30px;
     padding-top: 30px;
 }
-.contact-container h3 {
+.contact-container a {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.contact-container h3 {
     margin-top: 0px;
     font-size: 30px;
 }
@@ -244,15 +253,21 @@ p {
     height: 150px;
     background-color: black;
 }
-.copyright-text {
+#copyright-text {
     position: absolute;
     right: 0;
     bottom: 0;
     padding-right: 30px
 }   
+#copyright-text img {
+    height: 50px;
+}
 .footer-text {
     padding-left: 30px;
     padding-top: 10px;
+}
+.footer-text a {
+    text-decoration: none;
 }
 .footer-text:hover p{
     color: #FDF401;
@@ -278,6 +293,26 @@ p {
 .blinking{
     animation:blinkingText 1.2s infinite;
 }
+
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #262626;
+}
+
+
+
 @keyframes blinkingText{
     0%{     color: #FDF401;    }
     49%{    color: #FDF401; }

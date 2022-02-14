@@ -9,17 +9,20 @@
       font-family: 'Roboto Mono', monospace;
     }
     </style>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
 </head>
 
 
 <body class="mainBody" style="background-color:#181818">
   
-  
-<div class="topnav">
-  <a class="active" href="#home">//HOME</a>
-  <a href="#work"><span style="color: #FDF401;">//</span>WORK</a>
-  <a href="#contact"><span style="color: #FDF401;">//</span>CONTACT</a>
-  <a href="#resume"><span style="color: #FDF401;">//</span>RESUME</a>
+<div id="topnav">
+  <img src="images/RICKYYELLOW.png" alt="RM Logo">
+  <a href=#work onclick="scrollToWork()"><span style="color: #FDF401;">//</span>WORK</a>
+  <a href=#resume onclick="scrollToContact()"><span style="color: #FDF401;">//</span>CONTACT</a>
+  <a href="https://drive.google.com/file/d/1STaiWzu0HTAICYuSUijnpAvf73J2b3fe/view?usp=sharing" target="_blank"><span style="color: #FDF401;">//</span>RESUME</a>
 </div>
 
 <div class="header">
@@ -51,7 +54,7 @@
   </div>
 </div>
 
-<div class="selected-work-header" style="margin-left:0px">
+<div id="selected-work-header" style="margin-left:0px">
   <h2>SELECTED WORK<span style="color: #FDF401;">_</span>
   </h2>
 </div>
@@ -63,7 +66,7 @@
     <div class="full-cycle-container">
       <h3>FULL CYCLE<span style="color: #FDF401;">_</span>
       </h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+      <p>Non-profit redesign with a focus on user donation increase and a UI overhaul. Worked with client to ensure integrity of the brand remained intact.
       </p>
     </div>
   </div>
@@ -71,20 +74,21 @@
   <img src="images/mndot.png" alt= "MNDOT Demo">
     <div class="mndot-container">
       <h3>MNDOT REDESIGN<span style="color: #FDF401;">_</span></h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Redesign of a government webpage focusing on rebranding and visual hierarchy. Reorganized information into a simplistic "User Profile" system.
+      </p>
     </div>
   </div>
   <div class="selected-work-container">
   <img src="images/ramble.png" alt= "Ramble Demo">
     <div class="ramble-container">
       <h3>RAMBLE APP<span style="color: #FDF401;">_</span></h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>A solution for mobile to easily locate and rate campgrounds. Solo project that was later itterated on with gained knowledge and skills.</p>
     </div>
   </div>
 </div>
  
 
-<div class="contact-header" style="margin-left:0px">
+<div id="contact-header" style="margin-left:0px">
   <h2>GET IN TOUCH<span class="blinking" style="color: #FDF401;">_</span>
   </h2>
 </div>
@@ -92,13 +96,19 @@
 
 <div class="contact-row">
   <div class="contact-container">
+    <a href="mailto:rick.tm15@gmail.com" target="_blank">
     <h3>RICK.TM15@GMAIL.COM</h3>
+  </a>
       <div class= "contact-vectors">
         <div class="linked-vector">
+          <a href= "https://www.linkedin.com/in/rick-miller-05454319a/" target="_blank">
           <img src="images/vectorlinked.png" alt= "LinkedIn Logo link">
+          </a>
         </div>
         <div class="insta-vector">
+          <a href= "https://www.instagram.com/ricksoldout/" target="_blank">
           <img src="images/vectorinsta.png" alt= "Instagram Logo link">
+          </a>
         </div>
       </div>
   </div>
@@ -107,19 +117,28 @@
 <div class="footer">
   <div class="footer-right">
   <div class="footer-text">
+    <a href="mailto:rick.tm15@gmail.com" target="_blank">
     <p>RICK.TM15@GMAIL.COM
     </p>
+    </a>
   </div>
   <div class= "footer-vectors">
     <div class= "footer-linked">
+      <a href= "https://www.linkedin.com/in/rick-miller-05454319a/" target="_blank">
       <img src="images/vectorlinked.png" alt= "LinkedIn Logo link">
+      </a>
     </div>
     <div class= "footer-insta">
+      <a href= "https://www.instagram.com/ricksoldout/" target="_blank">
       <img src="images/vectorinsta.png" alt= "Instagram Logo link">
+      </a>
     </div>
   </div>
   </div>
-  <div class="copyright-text">
+  <div id="copyright-text">
+    <a onclick="scrollToTop()">
+    <img src="images/RICKYYELLOW.png" alt="RM Logo">
+    </a>
     <p>
       <span style="color: #FDF401;"> &#xA9;2022</span>
     </p>
