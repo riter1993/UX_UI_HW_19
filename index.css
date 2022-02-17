@@ -161,6 +161,12 @@ p {
 .selected-work-container h3 {
     font-size: 30px;
 }
+.full-cycle-container a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
 .selected-work-container:hover {
     outline-color: #FDF401;
     transform: scale(1.05);
