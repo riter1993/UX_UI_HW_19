@@ -89,6 +89,3 @@ function scrollToWork() {
 function scrollToTop() {
   document.getElementById('topnav').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
-function myFunction() {
-  alert("Page is loaded");
-}
